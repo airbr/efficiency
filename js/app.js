@@ -12,4 +12,4 @@ closeButton.addEventListener("click", () => {
   dialog.close();
 });
 
-  htmx.addClass(htmx.find('.cs-progress-bar'), 'animated', 300);
+htmx.addClass(htmx.find('.cs-progress-bar'), 'animated', 300);
