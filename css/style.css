@@ -132,6 +132,7 @@ dialog {
 .big-dollar-sign {
   text-align: center;
   font-size: 2px;
+  min-height: 200px;
 }
 
 /* ==========================================================================
