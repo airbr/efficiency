@@ -1,6 +1,8 @@
 <hr class="cs-hr" />
 <h2>A treatise on efficiency</h2>
-<h1 id="big-dollar-sign" class="big-dollar-sign">$</h1>
+<h1 id="big-dollar-sign" hx-get="/html/step-four.html" 
+       hx-swap="innerHTML"
+       hx-target="main" class="big-dollar-sign">$$$</h1>
 <div class="cs-slider">
   <div class="value">
     <p>-</p>
@@ -8,7 +10,7 @@
   </div>
   <div class="ruler"></div>
   <input id="range" type="range" min="1" max="100" value="0" />
-  <label for="range">Let truth echo through the land...</label>
+  <label for="range">Click when golden...</label>
 </div>
 <hr class="cs-hr" />
 
@@ -19,5 +21,10 @@ const displayText = document.getElementById("big-dollar-sign");
 fontSizeSlider.addEventListener("input", () => {
   const fontSize = fontSizeSlider.value;
   displayText.style.fontSize = `${fontSize}px`;
+
+    if (parseInt(fontSizeSlider.value) === parseInt(100)) {
+        // Apply CSS styles
+        displayText.style.color = 'gold';
+    }
 });
 </script>
